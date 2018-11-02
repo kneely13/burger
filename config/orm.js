@@ -1,10 +1,12 @@
 var connection = require("./connection.js");
 
+var tableName = "allburgers";
+
 const orm = {
         selectAll: function(cb) {
             connection.query("SELECT * FROM burgers", function(err, data) {
                 if (err) { 
-                    throw err; 
+                    throw ersr; 
                 }
                 cb(result);
             });

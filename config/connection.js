@@ -9,6 +9,8 @@ var connection = mysql.createConnection({
   database: "burgers_db"
 });
 
+var connection = mysql.createConnection(source.localhost);
+
 // Connect to the database
 connection.connect(function(err) {
   if (err) {
