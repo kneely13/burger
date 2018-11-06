@@ -1,6 +1,8 @@
 var connection = require("./connection.js");
+var orm = require('orm');
 
-var tableName = "allburgers";
+
+var tableName = "burgerName";
 
 const orm = {
         selectAll: function(cb) {
@@ -12,7 +14,7 @@ const orm = {
             });
         },
         insertOne: function (burgerName, cb) {
-            const sqlQuery= 'INSERT INTO ' + burgers(burger_name) VALUES ('${burgerName}');
+            const sqlQuery= 'INSERT INTO ' + burgers(burger_name) + VALUES('${burgerName}');
             connection.query(sqlQuery, function (err, data) {
                 if (err) cb(err,null);
                 cb(null, data)
