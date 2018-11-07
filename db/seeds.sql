@@ -1,4 +1,4 @@
-USE burgers_db;
+USE sofs3ws8waea34a1;
 
 INSERT INTO burgers (burger_name, devoured)
 VALUES('Whopper',true),
