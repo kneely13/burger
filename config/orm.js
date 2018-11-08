@@ -2,7 +2,7 @@ var connection = require("./connection.js");
 var orm = require('orm');
 
 
-var tableName = "burgerName";
+var tableName = "burgers";
 
 const orm = {
         selectAll: function(cb) {
